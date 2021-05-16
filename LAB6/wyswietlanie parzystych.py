@@ -37,26 +37,18 @@ print('ciag= ',ciag)
 j=0
 parzyste=[]
 for j in range(l):
-    if ciag[j]%2:
-        z=ciag[j-3
-               ]
-        ciag.append(z);
+    if ciag[j]%2==0:
+        z=ciag[j]
+        parzyste.append(z);
         j=j+1
         
-print('parzyste= ',parzyste)
+print('parzyste= ',parzyste)  
+
+ 
+def parzyste1(x):
+    for o in range(-x,x+1):
+        if o%2==0:
+            print(o)
             
-"""
-i=0
-x=0
-y=0
-ciag=[]
-for  i in range(l):
-    print('podaj ',i+1,'liczbę w ciągu');
-    x=input();
-    y=int(x);
-    ciag.append(y);
-    i=i+1;
-    
-    
-print('To jest twój ciąg:',ciag)
-"""
+x=input('podaj x=')
+parzyste1(int(x))
